@@ -1,16 +1,7 @@
 <?php
 session_start();
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "eagle-shop";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require '/includes/db-connect.php';
 
 $username = $_POST['username'];
 $email = $_POST['email'];

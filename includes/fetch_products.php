@@ -1,17 +1,7 @@
 <?php
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "eagle-shop";
+require '/includes/db-connect.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 // Fetch products from database
 $sql = "SELECT * FROM products";
