@@ -2,7 +2,7 @@
 
 session_start();
 
-require '/includes/db-connect.php';
+require 'db-connect.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];

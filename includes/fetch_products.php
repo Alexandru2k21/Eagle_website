@@ -1,6 +1,6 @@
 <?php
 
-require '/includes/db-connect.php';
+require 'db-connect.php';
 
 
 // Fetch products from database
