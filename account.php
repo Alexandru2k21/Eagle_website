@@ -31,7 +31,7 @@ $conn -> close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eagle</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/account.css">
     <script type="text/javascript" src="main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -59,9 +59,12 @@ $conn -> close();
         </nav>
     </header>
 
-    <h2>
-        Welcome to your account.
-    </h2>
+    <div class="profile">
+
+    <h2> Welcome to your account </h2>
+    <img src="images/isagi-avatar-pfp.jpg" alt="">
+
+    </div>
 
     
     <footer>
