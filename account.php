@@ -21,7 +21,7 @@ if ($conn -> connect_error) {
 
 $user_id = $_SESSION['user_id'];
 
-$stmt = $conn -> prepare("SELECT username, email FROM WHERE id = ?");
+$stmt = $conn -> prepare("SELECT username, email FROM users WHERE id = ?");
 $stmt -> bind_param("i" , $user_id);
 $stmt -> execute();
 $stmt -> bind_result($username, $email);
