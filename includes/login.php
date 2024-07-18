@@ -4,11 +4,13 @@ session_start();
 
 require 'db-connect.php';
 
-$email = $_POST['email'];
-$password = $_POST['password'];
+$stmt = $mysqli->prepare("SELECT id, password FROM users WHERE username = ?"); $stmt->bind_param("s", $username); 
 
-$stmt = $conn ->prepare("SELECT password FROM users WHERE email = ?");
-$stmt ->bind_param("s", $email);
+
+$username = $_POST['username']; 
+$password = $_POST['password']; 
+
+
 $stmt-> execute();
 $stmt -> store_result();
 

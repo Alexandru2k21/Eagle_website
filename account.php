@@ -62,7 +62,11 @@ $conn -> close();
     <div class="profile">
 
     <h2> Welcome to your account </h2>
+    <a href="#">
     <img src="images/isagi-avatar-pfp.jpg" alt="">
+    </a>
+        
+    <button class="cart-btn"><a href="#">Cart</a></button>
 
     </div>
 
