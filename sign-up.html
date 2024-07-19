@@ -23,10 +23,10 @@
                         <li><a href="account.php">Account</a></li>
                     </button>
                     <div class="dropdown-content">
-                      <a href="login.html">Login</a>
-                      <a href="sign-up.html">Sign up</a>
+                        <a href="login.html">Login</a>
+                        <a href="sign-up.html">Sign up</a>
                     </div>
-                  </div>
+                </div>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
     <div class="sign-up-container">
         <div class="sign-up-box">
             <h4>Sign Up</h4>
-            <form action="includes/sign-up.php" method="post">
+            <form action="includes/sign-up.php" method="post" enctype="multipart/form-data">
                 <div class="inputs">
                     <label for="username"><b>Username</b></label>
                     <input class="input-username" type="text" name="username" required>
@@ -47,11 +47,15 @@
                     <br>
                     <label for="password"><b>Password</b></label>
                     <input class="input-psw" type="password" name="password" required>
+                    <br>
+                    <label for="profile_image"><b>Profile Image</b></label>
+                    <input class="input-profile-image" type="file" name="profile_image" required>
                 </div>
                 <div class="sign-up-btn-container">
                     <button type="submit" class="sign-up-btn">Sign Up</button>
                 </div>
             </form>
+            
         </div>
     </div>
 
@@ -60,5 +64,6 @@
             <h3>Copyright © 2024, Eagle. All rights reserved</h3>
         </div>
     </footer>
+
 </body>
 </html>

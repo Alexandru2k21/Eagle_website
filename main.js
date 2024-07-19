@@ -32,3 +32,4 @@ function showSlides(n) {
   slideIndex++;
   setTimeout(() => showSlides(slideIndex), 5000); 
 }
+
